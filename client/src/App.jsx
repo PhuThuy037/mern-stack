@@ -19,6 +19,7 @@ import { action as loginAction } from "./pages/Login";
 import { action as adJobAction } from "./pages/AddJob";
 import { action as editJobAction } from "./pages/EditJob";
 import { action as deleteJobAction } from "./pages/DeleteJob";
+import { action as updateAction } from "./pages/Profile";
 import { loader as dashboardLoader } from "./pages/DashboardLayout";
 import { loader as allJobsLoader } from "./pages/AllJobs";
 import { loader as editJobLoader } from "./pages/EditJob";
@@ -71,6 +72,7 @@ const router = createBrowserRouter([
           {
             path: "profile",
             element: <Profile />,
+            action: updateAction,
           },
           {
             path: "admin",
